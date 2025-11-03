@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Найвідоміші фонтани Вінниччини</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Lora', serif;
+      margin: 0;
+      background: linear-gradient(135deg, #b3e5fc, #81d4fa, #4fc3f7);
+      color: #02475e;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.3);
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #01579b;
+      margin: 0 20px;
+      font-weight: 700;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #0277bd;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 20px 20px;
+    }
+
+    header h1 {
+      margin: 0 0 40px 0;
+      font-size: 2.8rem;
+    }
+
+    header p {
+      width: 90%;
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #01579b;
+    }
+
+    .fountains-container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 50px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    .fountain-card {
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .fountain-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    }
+
+    .fountain-card img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .fountain-card h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #01579b;
+    }
+
+    .fountain-card p {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #02475e;
+      max-width: 800px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.2);
+      color: #01579b;
+      margin-top: 50px;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Головна</a>
+    <a href="fountains.html">Фонтани</a>
+    <a href="gallery.html">Галерея</a>
+  </nav>
+
+  <header>
+    <h1>Найвідоміші фонтани Вінниччини</h1>
+    <p>Вінниця недаремно вважається містом фонтанів. Вони прикрашають площі, парки та набережні нашого міста, створюючи атмосферу спокою й гармонії. Деякі з них стали справжніми туристичними символами області. Нижче наведена добірка десяти найцікавіших фонтанів, якими пишається Вінниця.</p>
+  </header>
+
+  <div class="fountains-container">
+
+    <div class="fountain-card">
+      <h2>1. Фонтан Roshen</h2>
+      <p>Найвідоміший фонтан України, розташований на річці Південний Буг. Відкритий у 2011 році, він вражає світловими, лазерними та музичними ефектами, створюючи на воді справжнє шоу.</p>
+      <img src="fountain_roshen.png" alt="Фонтан Roshen">
+    </div>
+
+    <div class="fountain-card">
+      <h2>2. Фонтан у Центральному парку ім. Горького</h2>
+      <p>Символ класичної Вінниці. Після реконструкції 2013 року фонтан отримав сучасну підсвітку й повернув собі колишню велич. Особливо гарний увечері, коли навколо збираються сім’ї й молодь.</p>
+      <img src="fountain_park.png" alt="Фонтан у Центральному парку">
+    </div>
+
+    <div class="fountain-card">
+      <h2>3. Фонтан на проспекті Космонавтів</h2>
+      <p>Сучасний пішохідний фонтан біля скульптури “Людина з кулею”. Його струмені змінюють висоту під музику, створюючи ефект руху планет — символ прогресу та руху вперед.</p>
+      <img src="fountain_cosmonavty.png" alt="Фонтан на Космонавтів">
+    </div>
+
+    <div class="fountain-card">
+      <h2>4. Фонтан на площі Костянтина Могилка</h2>
+      <p>Розташований у районі Лісопарку, цей фонтан створено у 2018 році. Він має 16 динамічних струменів, які змінюють напрямок і висоту — справжня окраса нової площі.</p>
+      <img src="fountain_mogylka.png" alt="Фонтан на площі Костянтина Могилка">
+    </div>
+
+    <div class="fountain-card">
+      <h2>5. Фонтан «Мушля»</h2>
+      <p>Оригінальний фонтан у формі спіралі на площі Незалежності. Увечері підсвічується м’яким світлом, створюючи атмосферу затишку перед готелем “Поділля”.</p>
+      <img src="fountain_myshlia.png" alt="Фонтан 'Мушля'">
+    </div>
+
+    <div class="fountain-card">
+      <h2>6. Фонтан на Європейській площі</h2>
+      <p>Один із найстаріших міських фонтанів, який став центром туристичних прогулянок. Розташований біля вежі Артинова, він поєднує історичну архітектуру й гармонійний дизайн.</p>
+      <img src="fountain_europe.png" alt="Фонтан на Європейській площі">
+    </div>
+
+    <div class="fountain-card">
+      <h2>7. Фонтан на Поділлі</h2>
+      <p>Новий фонтан у сучасному житловому масиві “Поділля”. Має куполоподібну форму з центральним підсвіченим джерелом і затишним сквером довкола.</p>
+      <img src="fountain_podillia.png" alt="Фонтан на Поділлі">
+    </div>
+
+    <div class="fountain-card">
+      <h2>8. Фонтан біля арки парку</h2>
+      <p>Знаходиться біля центрального входу до парку ім. Горького. Його невелика, але гармонійна композиція зустрічає відвідувачів і створює святковий настрій.</p>
+      <img src="fountain_arka.png" alt="Фонтан біля арки парку">
+    </div>
+
+    <div class="fountain-card">
+      <h2>9. Фонтан Педагогічного університету</h2>
+      <p>Розташований перед головним корпусом ВДПУ. Скромний, але дуже символічний — місце зустрічей студентів і простір для відпочинку в центрі міста.</p>
+      <img src="fountain_university.png" alt="Фонтан Педагогічного університету">
+    </div>
+
+    <div class="fountain-card">
+      <h2>10. Фонтан на вулиці Пирогова</h2>
+      <p>Фонтан біля обласної лікарні, який став окрасою зеленої зони проспекту Пирогова. Його архітектура проста, але гармонійна — справжній куточок спокою серед міської метушні.</p>
+      <img src="fountain_pyrohova.png" alt="Фонтан на вулиці Пирогова">
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 Фонтани Вінниччини. Усі права захищено.
+  </footer>
+
+</body>
+</html>
