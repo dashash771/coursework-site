@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
+  <link rel="icon" type="image/png" href="favicon.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Галерея фонтанів Вінниччини</title>
@@ -14,25 +15,40 @@
       color: #02475e;
     }
 
+    /* ✅ ОНОВЛЕНИЙ nav */
     nav {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;  /* Лого зліва, меню справа  */
+      align-items: center;
       background: rgba(255, 255, 255, 0.3);
-      padding: 15px;
+      padding: 10px 20px;
       position: sticky;
       top: 0;
       z-index: 100;
     }
 
-    nav a {
+    /* ✅ Стиль логотипа */
+    .logo img {
+      height: 50px;
+      width: auto;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .logo img:hover {
+      transform: scale(1.05);
+    }
+
+    /* ✅ меню справа */
+    .menu-links a {
       text-decoration: none;
       color: #01579b;
-      margin: 0 20px;
+      margin-left: 20px;
       font-weight: 700;
       transition: color 0.3s;
     }
 
-    nav a:hover {
+    .menu-links a:hover {
       color: #0277bd;
     }
 
@@ -111,10 +127,19 @@
 </head>
 <body>
 
+  <!-- ✅ ОНОВЛЕНИЙ NAV З ЛОГО -->
   <nav>
-    <a href="index.html">Головна</a>
-    <a href="fountains.html">Фонтани</a>
-    <a href="gallery.html">Галерея</a>
+    <a href="index.html" class="logo">
+      <img src="logo.png" alt="Логотип">
+    </a>
+
+    <div class="menu-links">
+      <a href="index.html">Головна</a>
+      <a href="fountains.html">Фонтани</a>
+      <a href="gallery.html">Галерея</a>
+            <a href="about.html">Про сайт</a>
+
+    </div>
   </nav>
 
   <header>
